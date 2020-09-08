@@ -1,0 +1,569 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            height: 100vh;
+            min-width: 300px;
+        }
+        
+        .header {
+            width: 100%;
+        }
+        
+        .header_1,
+        .header_2 {
+            background-color: #000;
+            color: rgb(165, 165, 165);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 1%;
+            flex-wrap: wrap;
+        }
+        
+        .header_1 ul,
+        .header_2 ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .header a {
+            color: rgb(182, 182, 182);
+            text-decoration: none;
+        }
+        
+        .header_1 li,
+        .header_2 li {
+            display: inline-block;
+            list-style: none;
+            padding: 3px 5px;
+        }
+        
+        .header_1 a:hover {
+            color: #fff;
+        }
+        
+        .header_2 a:hover {
+            color: #000;
+        }
+        
+        .header_1 .active {
+            color: #fff;
+        }
+        
+        .header_2 {
+            background-color: #fff;
+            color: rgb(165, 165, 165);
+            text-transform: uppercase;
+            padding: 17px 1%;
+        }
+        
+        .header_2 .btn {
+            color: #fff;
+            padding: 6px 8px;
+            background-color: rgb(13, 184, 184);
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 11px;
+            vertical-align: middle;
+        }
+        
+        .header_2 .btn:hover {
+            background-color: rgb(123, 50, 190);
+        }
+        
+        .header_3 {
+            display: flex;
+            justify-content: initial;
+            padding: 5px 1%;
+            background-color: rgb(245, 211, 59);
+        }
+        
+        .header_3 a {
+            text-decoration: none;
+            color: #000;
+            width: 100%;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 90%;
+            margin: 0 auto;
+            height: 75%;
+            color: #fff;
+            font-size: 9px;
+            text-align: center;
+        }
+        
+        .container .item1,
+        .container_item {
+            background: url(../Css/laptop-3174729_1280.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 33.30%;
+        }
+        
+        .container_text {
+            position: relative;
+            top: 55%;
+            font-size: 9px;
+            text-align: left;
+            padding: 0 1%;
+        }
+        
+        .container_item {
+            background: none;
+            display: flex;
+            justify-items: center;
+            flex-wrap: wrap;
+            height: 66%;
+        }
+        
+        .container .item2 {
+            background: url(../Css/ipad-820272_1280.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 49%;
+        }
+        
+        .container .item3 {
+            background: url(../Css/fox-5042242_1280.jpg) center no-repeat;
+            background-size: cover;
+            width: 100%;
+            height: 49%;
+        }
+        
+        .latest_news,
+        .latest_funding,
+        .article_list,
+        .latest_deal {
+            width: 70%;
+            margin: 0% auto;
+            padding: 1% 0;
+        }
+        
+        .latest_news h1,
+        .latest_funding_content h1,
+        .article h1,
+        .latest_deal h1 {
+            color: rgb(212, 62, 62);
+            font-weight: bold;
+        }
+        
+        .news {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .latest_news img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .news h6 {
+            color: rgb(196, 194, 194);
+            font-size: 11px;
+            margin: 6px 0px;
+        }
+        
+        .latest_funding_title {
+            display: flex;
+            justify-content: space-between;
+            color: rgb(212, 62, 62);
+            flex-wrap: wrap;
+        }
+        
+        .latest_funding_title ul {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: nowrap;
+        }
+        
+        .latest_funding_title li {
+            list-style: none;
+            display: inline-block;
+            padding: 12px 2px;
+        }
+        
+        .latest_funding_content {
+            position: relative;
+            margin: 30px auto;
+        }
+        
+        .latest_funding_content h1 {
+            color: #fff;
+            background-color: rgb(212, 62, 62);
+            text-align: center;
+            font-size: 16px;
+            padding: 10px 0;
+        }
+        
+        .latest_funding_content .i1 {
+            background-color: rgb(231, 197, 197);
+            text-align: center;
+            padding: 10px 0;
+        }
+        
+        .i1 h5 {
+            font-weight: normal;
+            display: block;
+            width: 100%;
+        }
+        
+        .i2 h4 {
+            font-weight: normal;
+            padding: 5px 0;
+            display: block;
+        }
+        
+        .i2 {
+            padding: 10px 20px;
+            font-size: 14px;
+            background-color: rgb(247, 236, 236);
+            border-bottom: 1px solid rgb(235, 185, 185);
+        }
+        
+        .i3 {
+            padding: 15px 20px 60px 20px;
+            font-size: 14px;
+            background-color: rgb(247, 236, 236);
+            vertical-align: top;
+        }
+        
+        .i3 h4,
+        .article_image h4,
+        .article_image h5 {
+            font-weight: normal;
+        }
+        
+        .latest_funding_content img {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 1;
+            height: 70px;
+            width: auto;
+        }
+        
+        .article_image {
+            width: 100%;
+            background-color: indigo;
+            margin: 0 auto;
+            height: 280px;
+            font-size: 15px;
+            color: #fff;
+            background: url(./tree-736885_640.jpg) center no-repeat;
+            background-size: cover;
+        }
+        
+        .article_image h4,
+        .article_image h2,
+        .article_image h5 {
+            position: relative;
+            top: 55%;
+            left: 2%;
+            padding: 3px 0;
+            width: 85%;
+        }
+        
+        .article_header {
+            color: rgb(212, 62, 62);
+            width: 100%;
+            font-size: 15px;
+            background-color: rgb(240, 215, 215);
+            margin: 0 auto;
+            padding: 23px 2%;
+            position: relative;
+        }
+        
+        .article_header h4,
+        .article_header h5 {
+            width: 68%;
+        }
+        
+        .article_header img {
+            height: 90%;
+            width: auto;
+            position: absolute;
+            top: 5%;
+            right: 0%;
+            bottom: 5%;
+        }
+        
+        .article_content {
+            padding: 12px 2px;
+            font-size: 14px;
+            color: red;
+        }
+        
+        .article_content_text {
+            display: flex;
+        }
+        
+        .article_content a {
+            text-decoration: none;
+            color: rgb(77, 76, 76);
+            display: inline-block;
+            padding: 8px 3px;
+            border-bottom: 1px solid rgb(212, 210, 210);
+        }
+        
+        .article_content li {
+            list-style-position: inside;
+            padding: 8px 0;
+        }
+        
+        .article_content ul {
+            width: 1.5%;
+        }
+        
+        .latest_deal_title {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: rgb(212, 62, 62);
+        }
+        
+        .latest_deal_title h5 {
+            font-size: 15px;
+        }
+        
+        .latest_deal_content img {
+            width: 100%;
+            height: auto;
+        }
+        
+        .latest_deal_content figcaption {
+            font-weight: bold;
+            padding: 8px 8px 0 0px;
+        }
+        
+        .latest_deal_content h5 {
+            font-size: 17px;
+        }
+        
+        .latest_deal_content a {
+            text-decoration: none;
+            color: #000;
+        }
+        
+        .latest_deal_content a:hover {
+            text-decoration: underline;
+            color: rgb(212, 62, 62);
+        }
+        
+        .latest_deal_content span {
+            font-weight: normal;
+            text-decoration: line-through;
+            color: rgb(156, 153, 153);
+            margin-right: 6px;
+            font-size: 14px;
+        }
+        
+        .footer {
+            width: 100%;
+            background-color: grey;
+        }
+        
+        .footer_nav {
+            background-color: rgb(70, 69, 69);
+            padding: 5% 0;
+        }
+        
+        .footer_nav_lien li {
+            display: inline-block;
+            padding: 2%;
+            background-color: rgb(102, 101, 101);
+            border-radius: 50%;
+            margin: 0 1%;
+        }
+        
+        .footer_nav_lien {
+            text-align: center;
+            color: #fff;
+            padding: 2% 0;
+        }
+        
+        .footer_nav_text {
+            text-align: center;
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 12px;
+        }
+        
+        .footer_nav_text li {
+            display: inline-block;
+            padding: 2% 1%;
+        }
+        
+        .footer_copyright {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+        
+        .footer_copyright h5 {
+            font-weight: normal;
+            padding: 4% 0;
+        }
+        
+        @media only screen and (min-width: 768px) {
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .container {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                width: 98%;
+                margin: 0 auto;
+                height: 75%;
+                color: #fff;
+                font-size: 12px;
+                text-align: center;
+                padding: 0.3% 0;
+            }
+            .container .item1 {
+                background: url(../Css/laptop-3174729_1280.jpg) center no-repeat;
+                background-size: cover;
+                width: 68%;
+                height: 100%;
+            }
+            .container_text {
+                position: relative;
+                top: 75%;
+                font-size: 15px;
+                text-align: left;
+                padding: 1%;
+            }
+            .container_item .container_text {
+                position: relative;
+                top: 55%;
+                font-size: 11px;
+                text-align: left;
+                padding: 1%;
+            }
+            .container_text h4 {
+                color: rgb(211, 211, 211);
+                padding: 1% 0;
+            }
+            .container_text i {
+                padding: 0 0.15% 0 1%;
+            }
+            .container_item {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: column;
+                width: 31.75%;
+                height: 100%;
+                padding: 0 0;
+            }
+            .container_item .item2,
+            .container_item .item3 {
+                height: 49.75%;
+            }
+            .latest_news,
+            .latest_funding,
+            .article_list,
+            .latest_deal {
+                width: 80%;
+            }
+            .latest_news h1,
+            .latest_funding_content h1,
+            .article h1,
+            .latest_deal h1 {
+                color: rgb(212, 62, 62);
+                font-weight: bold;
+                padding: 1% 0;
+            }
+            .news,
+            .latest_funding .content,
+            .latest_deal .content {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .news .news_1,
+            .latest_funding_content,
+            .latest_deal_content {
+                width: 23.5%;
+                padding: 2% 0;
+            }
+            .latest_funding_content h1 {
+                color: #fff;
+                background-color: rgb(212, 62, 62);
+                text-align: center;
+                font-size: 16px;
+                padding: 10px 0;
+            }
+            .content .latest_funding_content img {
+                position: absolute;
+                top: 25px;
+                left: 5px;
+                z-index: 1;
+                max-height: 60px;
+                width: auto;
+            }
+            .article_list {
+                display: flex;
+                justify-content: space-between;
+                flex-wrap: wrap;
+            }
+            .article_list .article {
+                width: 32%;
+            }
+            .article_header img {
+                width: 30%;
+                height: auto;
+                position: absolute;
+                top: 5%;
+                right: 0%;
+                bottom: 5%;
+            }
+            .latest_deal_title {
+                display: flex;
+                justify-content: space-between;
+                color: rgb(212, 62, 62);
+                flex-wrap: nowrap;
+            }
+            .footer_nav {
+                background-color: rgb(29, 28, 28);
+                padding: 0%;
+            }
+            .footer_nav_lien li {
+                display: inline-block;
+                padding: 0.70%;
+                background-color: rgb(68, 68, 68);
+                border-radius: 50%;
+                margin: 0 0.75%;
+            }
+            .footer_nav_lien {
+                text-align: center;
+                color: #fff;
+                padding: 3% 0 1% 0%;
+            }
+            .footer_nav_text li {
+                display: inline-block;
+                padding: 0.5%;
+            }
+            .footer_copyright h5 {
+                font-weight: normal;
+                padding: 2% 0;
+            }
+            .footer_nav_text {
+                text-align: center;
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 12px;
+                padding: 1% 0;
+            }
+        }
